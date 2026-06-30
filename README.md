@@ -13,12 +13,12 @@ A deep learning model for estimating tropical cyclone intensity (Dvorak T-number
 
 ### Overview
 
-ENM-AIIR is a deep learning model for estimating tropical cyclone intensity from satellite imagery, based on the Dvorak technique's T-number scale. The model is trained on over 70,000 single-band satellite images of storms from the Northwest Pacific and Southwest Pacific basins.
+ENM-AIIR is a deep learning model for estimating tropical cyclone intensity from satellite imagery, based on the Dvorak technique's T-number scale. The model is trained on over 3,100 single-band satellite images of storms from the Northwest Pacific and Austraila basins.
 
 ### Dataset
 
 - **Size:** 3,100+ images
-- **Coverage:** Tropical cyclones from the Northwest Pacific and Southwest Pacific basins
+- **Coverage:** Tropical cyclones from the Northwest Pacific and Austraila basins
 - **Imagery:** Single-band long-wave infrared (IR Band-13), which enhances cloud-top brightness and helps capture the spatial structure of the storm (e.g. spiral banding, eye clarity, central dense overcast)
 - **Labels:** Each image is paired with a corresponding T-number (Dvorak technique) as the intensity label
 
@@ -65,7 +65,7 @@ A hosted, browser-based version of the model is available at [https://enm-aiir.p
 
 ### Limitations
 
-- The model was mostly trained and validated on Northwest/Southwest Pacific basin storms only; performance on storms from other basins (Atlantic, Indian Ocean, etc.) has not been evaluated and may differ.
+- The model was mostly trained and validated on Northwest Pacific/Austraila basin storms only; performance on storms from other basins (Atlantic, Indian Ocean, etc.) has not been evaluated and may differ.
 - Evaluation metrics above are reported for the T1.5–T8.0 range; performance at the extremes of the intensity scale (very weak or very intense systems) may be less reliable due to lower sample density in those bins.
 - This model is intended as a research and decision-support tool. It is not a substitute for official tropical cyclone intensity estimates issued by national meteorological agencies (e.g. JMA, JTWC, PAGASA).
 
@@ -92,12 +92,12 @@ https://github.com/EnceladusCat/ENM-AIIR-for-Tropical-Cyclones
 
 ### 项目简介
 
-ENM-AIIR 是一个基于卫星图像、依照德沃夏克分析法（Dvorak Technique）T值标准来估计热带气旋强度的深度学习模型。模型训练数据集包含超过3100张来自西北太平洋和西南太平洋风暴的单波段卫星图像。
+ENM-AIIR 是一个基于卫星图像、依照德沃夏克分析法（Dvorak Technique）T值标准来估计热带气旋强度的深度学习模型。模型训练数据集包含超过3100张来自西北太平洋和澳洲地区风暴的单波段卫星图像。
 
 ### 数据集
 
 - **样本数量：** 3100张以上
-- **覆盖范围：** 西北太平洋与西南太平洋海域的热带气旋
+- **覆盖范围：** 西北太平洋与澳洲地区海域的热带气旋
 - **图像类型：** 单波段卫星长波红外（IR Band-13）波段，该波段能增强云层亮度，有助于更好地捕捉风暴的空间结构（如螺旋云带、风眼清晰度、中心密闭云区等特征）
 - **标签：** 每张图像对应一个独立的T值（依据德沃夏克分析法）作为强度标签
 
@@ -144,7 +144,7 @@ cd ENM-AIIR-for-Tropical-Cyclones
 
 ### 局限性
 
-- 模型大部分基于西北/西南太平洋海域的风暴数据训练与验证，在其他海域（如大西洋、印度洋等）风暴上的表现尚未评估，可能存在差异。
+- 模型大部分基于西北太平洋/澳洲地区海域的风暴数据训练与验证，在其他海域（如大西洋、印度洋等）风暴上的表现尚未评估，可能存在差异。
 - 上述评估指标基于T2.5–T8.0区间统计，在强度量表两端（极弱或极强系统）由于该区间样本数量较少，模型表现的可靠性可能有所下降。
 - 本模型定位为科研与辅助决策工具，不能替代各国气象机构（如日本气象厅JMA、美国联合台风警报中心JTWC、菲律宾大气地球物理和天文管理局PAGASA等）发布的官方热带气旋强度评估。
 
