@@ -92,7 +92,7 @@ https://github.com/EnceladusCat/ENM-AIIR-for-Tropical-Cyclones
 
 ### 项目简介
 
-ENM-AIIR 是一个基于卫星图像、依照德沃夏克分析法（Dvorak Technique）T值标准来估计热带气旋强度的深度学习模型。模型训练数据集包含超过7万张来自西北太平洋和西南太平洋风暴的单波段卫星图像。
+ENM-AIIR 是一个基于卫星图像、依照德沃夏克分析法（Dvorak Technique）T值标准来估计热带气旋强度的深度学习模型。模型训练数据集包含超过3100张来自西北太平洋和西南太平洋风暴的单波段卫星图像。
 
 ### 数据集
 
